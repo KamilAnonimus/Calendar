@@ -1,6 +1,9 @@
+import Calendar from './components/Calendar'
+import './styles/homepage.scss'
+
 function App() {
   return (
-    <div></div>
+      <Calendar />
   );
 }
 

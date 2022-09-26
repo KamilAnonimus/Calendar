@@ -1,0 +1,60 @@
+*,*::before,*::after {box-sizing: border-box;}
+ul[class],ol[class] {
+  padding: 0;
+  list-style: none;
+}
+body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd {margin: 0;}
+input,button,textarea,select {font: inherit;}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, rgba(25, 53, 143, 0.979), rgba(74, 154, 245, 0.89));
+    color: rgb(0, 2, 117);
+}
+#root {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  .container__header {
+    padding: 10px;
+  }
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.container__table2__name-days, .day, .day-and-no-date {
+  padding: 5px;
+  width: 100%;
+}
+
+.container__table2, .container__table__weeks2__week {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day, .day-and-no-date {
+  padding: 7px;
+  min-width: 32px;
+  border: 1px solid rgba(0, 38, 165, 0.384);
+  min-height: 70px;
+}
+.day:hover {
+  background-color: rgb(53, 130, 245);
+  transition: 0.5s;
+}
+
+.container__header{
+  .button-left {
+    
+  }
+}
