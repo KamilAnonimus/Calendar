@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Calendar.github/static/css/main.4823a49a.css",
-    "main.js": "/Calendar.github/static/js/main.0f0b699d.js",
-    "index.html": "/Calendar.github/index.html",
-    "main.4823a49a.css.map": "/Calendar.github/static/css/main.4823a49a.css.map",
-    "main.0f0b699d.js.map": "/Calendar.github/static/js/main.0f0b699d.js.map"
+    "main.css": "/Calendar/static/css/main.4823a49a.css",
+    "main.js": "/Calendar/static/js/main.0f0b699d.js",
+    "index.html": "/Calendar/index.html",
+    "main.4823a49a.css.map": "/Calendar/static/css/main.4823a49a.css.map",
+    "main.0f0b699d.js.map": "/Calendar/static/js/main.0f0b699d.js.map"
   },
   "entrypoints": [
     "static/css/main.4823a49a.css",
