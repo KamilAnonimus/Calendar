@@ -6,14 +6,15 @@ ul[class],ol[class] {
 body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd {margin: 0;}
 input,button,textarea,select {font: inherit;}
 body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to bottom right, rgba(25, 53, 143, 0.979), rgba(74, 154, 245, 0.89));
-    color: rgb(0, 2, 117);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, rgba(25, 53, 143, 0.979), rgba(74, 154, 245, 0.89));
+  color: rgb(0, 2, 117);
+  user-select: none;
 }
 #root {
   width: 100%;
@@ -22,7 +23,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  .container__header {
+  .homepage__header {
     padding: 10px;
   }
 }
@@ -32,29 +33,62 @@ header {
   margin: 0 auto;
 }
 
-.container__table2__name-days, .day, .day-and-no-date {
+.homepage__table2__name-days, .homepage__table__weeks2__week__day, .day-and-no-date, .homepage__table__week__dayNow {
   padding: 5px;
   width: 100%;
 }
 
-.container__table2, .container__table__weeks2__week {
+.homepage__table2, .homepage__table__weeks2__week {
   display: flex;
   justify-content: space-around;
 }
 
-.day, .day-and-no-date {
+.homepage__table__weeks2__week__day, .day-and-no-date, .homepage__table__week__dayNow {
   padding: 7px;
   min-width: 32px;
   border: 1px solid rgba(0, 38, 165, 0.384);
   min-height: 70px;
 }
-.day:hover {
-  background-color: rgb(53, 130, 245);
+.homepage__table__weeks2__week__day:hover, .homepage__table__week__dayNow:hover {
+  box-shadow: -5px -5px 5px rgb(53, 130, 245), 5px 5px 5px rgb(53, 130, 245);
   transition: 0.5s;
 }
 
-.container__header{
-  .button-left {
-    
+.homepage__table__week__dayNow {
+  box-shadow: -1px -1px 1px rgb(153, 19, 19), 1px 1px 1px rgb(153, 19, 19);
+}
+
+.mounth, .year {
+  min-width: 90px;
+  text-align: center;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.homepage__table {
+  width: 100%;
+}
+
+.homepage__tasks {
+  input, textarea, button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(6, 70, 155);
+    border: 1px solid rgb(1, 31, 70);
+    color: rgb(3, 0, 160);
+    outline:none;
+    resize: none;
   }
+  textarea {
+    width: 90%;
+    height: 20%;
+  }
+}
+
+.homepage__tasks__Description-event-in-localstorage {
+  word-wrap: break-word;
+  max-width: 290px;
 }
